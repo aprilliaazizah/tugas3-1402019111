@@ -62,12 +62,6 @@
 
     <!-- Page Content -->
     <div class="container">
-      <!-- Jumbotron Header -->
-      <header class="jumbotron my-4">
-        <h1 class="display-3" id="say-hello">Hello</h1>
-        <p class="lead">selamat datang di website 3D Calculator. Disini kalian dapat menghitung
-          Luas dan Volume <br/> pada Silinder, Kerucut, dan Bola secara cepat! </p>
-      </header>
 
       <!-- Page Features -->
       <div class="row text-center">
@@ -105,72 +99,6 @@
           </div>
         </div>
 
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-            <img
-              class="card-img-top"
-              src="images/kerucut.png"
-              width="500"
-              height="220"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title">Kerucut</h4>
-              <p class="card-text">
-                <form id='hitung-ker'>
-                  <div class="mb-3">
-                    <label for="input-j-k" class="form-label">Jari-jari Kerucut (Meter) </label>
-                    <input type="text" class="form-control" id="input-j-k" >
-                  </div>
-                  <div class="mb-3">
-                    <label for="input-g-k" class="form-label">Garis Pelukis Kerucut (Meter) </label>
-                    <input type="text" class="form-control" id="input-g-k" >
-                  </div>
-                  <div class="mb-3">
-                    <label for="input-t-k" class="form-label">Tinggi Kerucut (Meter)</label>
-                    <input type="text" class="form-control" id="input-t-k">
-                  </div>
-                  <div class="mb-3" id='hasil-wrapper-ker'>
-                    <h6 id="hasil-ker">
-
-                    </h6>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Hitung</button>
-                </form>
-              </p>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-3 col-md-6 mb-4">
-          <div class="card h-100">
-            <img
-              class="card-img-top"
-              src="images/bola.png"
-              width="500"
-              height="220"
-              alt=""
-            />
-            <div class="card-body">
-              <h4 class="card-title">Bola</h4>
-              <p class="card-text">
-                <form id='hitung-bola'>
-                  <div class="mb-3">
-                    <label for="input-j-b" class="form-label">Jari-jari Bola (Meter) </label>
-                    <input type="text" class="form-control" id="input-j-b" >
-                  </div>
-                  <div class="mb-3" id='hasil-wrapper'>
-                    <h6 id="hasil-bola">
-
-                    </h6>
-                  </div>
-                  <button type="submit" class="btn btn-primary">Hitung</button>
-                </form>
-              </p>
-            </div>
-          </div>
-        </div>
-
 
       </div>
       <!-- /.row -->
@@ -198,6 +126,8 @@
     </footer>
 
     <!-- Bootstrap core JavaScript -->
+    <script src="dist/jquery/jquery.min.js"></script>
+    <script src="dist/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="javascript/tugas3.js"></script>
     <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
   </body>

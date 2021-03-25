@@ -4,20 +4,20 @@ if (sayHello) {
   var hour = now.getHours();
 
   if (elementSayHello) {
-    if (($(sayHello) != null) | (hour > 0)) {
+    if ((sayHello != null) | (hour > 0)) {
       if (hour > 0 && hour < 11) {
-        elementSayHello.textContent = `Hello ${sayHello}, Selamat Pagi.`;
+        elementSayHello.textContent = `Hallo ${sayHello}, Selamat Pagi.`;
       }
       if ((hour >= 11) | (hour < 14)) {
-        elementSayHello.textContent = `Hello ${sayHello}, Selamat Siang.`;
+        elementSayHello.textContent = `Hallo ${sayHello}, Selamat Siang.`;
       }
 
       if ((hour >= 15) | (hour >= 18)) {
-        elementSayHello.textContent = `Hello ${sayHello}, Selamat Sore.`;
+        elementSayHello.textContent = `Hallo ${sayHello}, Selamat Sore.`;
       }
 
       if (hour > 18) {
-        elementSayHello.textContent = `Hello ${sayHello}, Selamat Malam.`;
+        elementSayHello.textContent = `Hallo ${sayHello}, Selamat Malam.`;
       }
     }
   }
